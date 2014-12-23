@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Envelope : Personal budget application for the Elementary OS desktop">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Envelope</title>
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Envelope by nlaplante</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/nlaplante/envelope">View on GitHub</a>
-
-          <h1 id="project_title">Envelope</h1>
-          <h2 id="project_tagline">Personal budget application for the Elementary OS desktop</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/nlaplante/envelope/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/nlaplante/envelope/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+        <header>
+          <h1>Envelope</h1>
+          <h2>Personal budget application for the Elementary OS desktop</h2>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/nlaplante/envelope/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/nlaplante/envelope/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/nlaplante/envelope" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a id="envelope" class="anchor" href="#envelope" aria-hidden="true"><span class="octicon octicon-link"></span></a>Envelope</h1>
+
+<p>Personal budget application for the Elementary OS desktop. It
+is written in Vala and uses the <a href="https://launchpad.net/granite">Granite</a> framework.</p>
+
+<p><a href="http://nlaplante.github.io/envelope">http://nlaplante.github.io/envelope</a></p>
+
+<p><a href="https://travis-ci.org/nlaplante/envelope"><img src="https://travis-ci.org/nlaplante/envelope.svg" alt="Build Status"></a></p>
 
 <h2>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
-<h3>First run</h3>
+<p>Envelope helps you maintain your personal budget by using the tried-and-true <a href="https://en.wikipedia.org/wiki/Envelope_system">envelope system</a>. You designate spending categories (envelopes) and distribute your monthly income into them.</p>
 
-<img src="images/screens/welcome-screen.png" alt="Welcome screen" />
+<p>Envelope lets you configure accounts where you record all your transactions. You then assign each of them to a category.</p>
 
-<h3>Empty account</h3>
+<p>In Elementary OS, Envelope is known as <em>Budget</em>.</p>
 
-<img src="images/screens/account-screen.png" alt="Account screen" />
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
 
-<h3>Transactions</h3>
+<ul>
+<li>Envelope system budget workflow</li>
+<li>Import transactions from QIF/OFX files</li>
+<li>Integrates with the Elementary OS desktop</li>
+</ul>
 
-<img src="images/screens/transactions.png" alt="Transactions" />
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<h3>Account editing</h3>
+<p>There ain't no binary package distribution yet. To use Envelope now, you'll have to build it from sources.</p>
 
-<img src="images/screens/account-edit-number.png" />
-<img src="images/screens/account-edit-balance.png" />
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h3>
 
-<h3>Search with suggestions</h3>
+<ul>
+<li>Vala &gt;=0.23.2</li>
+<li>glib &gt;=2.29.0</li>
+<li>gio-2.0</li>
+<li>Gtk+ &gt;=3.10</li>
+<li>libgee-0.8</li>
+<li>granite-0.3</li>
+<li>sqlheavy-0.1</li>
+</ul>
 
-<img src="images/screens/search-suggestions.png" />
+<h3>
+<a id="building-from-sources" class="anchor" href="#building-from-sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building from sources</h3>
 
-<p>In elementary OS, Envelope is known as Budget.</p>
+<div class="highlight highlight-sh"><pre>$ git clone https://github.com/nlaplante/envelope
+$ <span class="pl-s3">cd</span> envelope
+$ mkdir build
+$ <span class="pl-s3">cd</span> build
+$ cmake ..
+$ make</pre></div>
 
-<h1>
-<a id="installation--licensing" class="anchor" href="#installation--licensing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation &amp; Licensing</h1>
+<p>From there you can either use the binary in <code>build/envelope</code> or install it:</p>
 
-<p>Please consult the INSTALL and COPYING files for more information.</p>
-      </section>
+<div class="highlight highlight-sh"><pre>$ sudo make install</pre></div>
+        </section>
+
+        <footer>
+          Envelope is maintained by <a href="https://github.com/nlaplante">nlaplante</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Envelope maintained by <a href="https://github.com/nlaplante">nlaplante</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-
-
   </body>
 </html>
