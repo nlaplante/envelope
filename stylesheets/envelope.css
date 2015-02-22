@@ -1,0 +1,47 @@
+body {
+  font-family: 'Open Sans', 'Droid Sans', sans-serif;
+}
+
+.main {
+  min-height: 600px;
+  height: 600px;
+  background: transparent url(../images/screen-account.png) center -100% no-repeat;
+}
+
+.main h1 {
+  margin-bottom: 35px;
+}
+
+.section {
+  padding: 60px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.section p {
+  font-size: 18px;
+}
+
+.overview {
+  background: #2196F3;
+  color: #fff;
+}
+
+.overview h2 {
+  color: #fff;
+}
+
+.features {
+  background: #fff;
+  color: #333;
+}
+
+.workflow {
+  background: #333;
+  color: #ccc;
+  height: 600px;
+  min-height: 600px;
+}
+
+.workflow h2 {
+  color: #eee;
+}
