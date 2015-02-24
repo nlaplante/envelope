@@ -1,11 +1,26 @@
 body {
-  font-family: 'Open Sans', 'Droid Sans', sans-serif;
+  font-family: 'Open Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.h1, 
+.h2, 
+.h3, 
+.h4, 
+.h5, 
+.h6 {  
+  font-family: Raleway, 'Open Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .main {
-  min-height: 600px;
-  height: 600px;
   background: transparent url(../images/screen-account.png) center -100% no-repeat;
+  height: 600px;
 }
 
 .main h1 {
@@ -13,20 +28,22 @@ body {
 }
 
 .section {
-  padding: 60px 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 60px 0;
 }
 
 .section p {
   font-size: 18px;
 }
 
-.overview {
-  background: #2196F3;
+.section h2 {
   color: #fff;
+  margin-bottom: 40px;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.5), 1px 1px 1px rgba(0,0,0,0.1)
 }
 
-.overview h2 {
+.overview {
+  background: #2196F3; 
   color: #fff;
 }
 
