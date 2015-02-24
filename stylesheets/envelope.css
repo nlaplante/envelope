@@ -1,4 +1,5 @@
 body {
+  background: url(../images/square_bg.png) 0 0 repeat;
   font-family: 'Open Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
@@ -19,7 +20,7 @@ h6,
 }
 
 .main {
-  background: transparent url(../images/screen-account.png) center -100% no-repeat;
+  background: url(../images/screen-account.png) center 230px no-repeat;
   height: 600px;
 }
 
@@ -27,7 +28,14 @@ h6,
   margin-bottom: 35px;
 }
 
+.main h1.title {
+  font-size: 18px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
 .section {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   padding: 60px 0;
 }
@@ -43,17 +51,17 @@ h6,
 }
 
 .overview {
-  background: #2196F3; 
+  background: url(../images/batthern_blue.png) 0 0 repeat;
   color: #fff;
 }
 
 .features {
-  background: #fff;
+  background: url(../images/fabric_of_squares_gray.png) 0 0 repeat;
   color: #333;
 }
 
 .workflow {
-  background: #333;
+  background: url(../images/tactile_noise.png) 0 0 repeat;
   color: #ccc;
   height: 600px;
   min-height: 600px;
