@@ -3,18 +3,18 @@ body {
   font-family: 'Open Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-.h1, 
-.h2, 
-.h3, 
-.h4, 
-.h5, 
-.h6 {  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: Raleway, 'Open Sans', 'Droid Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
@@ -32,6 +32,10 @@ h6,
   font-size: 18px;
   margin-bottom: 0;
   font-weight: 400;
+}
+
+.main h1.title .fa {
+  font-size: 10px;
 }
 
 .section {
