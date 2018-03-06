@@ -1,5 +1,5 @@
-# On hold
-This project is looking for a new maintainer.
+# DEPRECATION NOTICE
+This project is no longer maintained. The [up to date](https://github.com/cjfloss/envelope) version is maintained by [@cjfloss](https://github.com/cjfloss).
 
 # Envelope
 
